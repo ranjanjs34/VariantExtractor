@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+clear
+echo -e "########################################\n\n"
+echo "Developer: Ranjan Jyoti Sarma, Ph.D. Research Scholar"
+echo "Bioinformatics Lab, Mizoram University, India"
+echo -e "########################################\n\n"
+mkdir -p ./Results
+python3 ./build_python3/filter.py
+mv ./annotated/*_filter.txt ./Results/
+echo "Done!"
